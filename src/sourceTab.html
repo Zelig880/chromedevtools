@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ChromeDevTools: Source tab</title>
+    <meta name="description" content="dynamic tutorial on Chrome Developer Tools: source tab">
+    <meta name="author" content="msoWebDesign">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-md-3 sidebar">
+            <h3>Examples</h3>
+                <a href="ElementsTab.html" >Elements tab</a>
+                <a href="sourceTab.html" >Source tab</a>
+                <a href="http://facebook.com" >Network tab( It will link to facebook)</a>
+                <a href="ConsoleTab.html" >Console tab</a>
+                <a href="index.html" >Back</a>
+        </div>
+        <div class="col-md-8">
+            <h1>Source tab</h1>
+            <input type="text" name="value1" />
+            +
+            <input type="text" name="value2" />
+            =
+            <input type="text" class="result" disabled="disabled"/>
+        </div>
+    </div>
+</body>
+    <script>
+        $(':input[type=text]').blur( function(){
+            var value1 = $(':input[name=value1]');
+            var value2 = $(':input[name=value2]');
+            
+            
+            if(!isNaN(value1) && !isNaN(value2)){
+                $('.result').val(parseInt(value1) + parseInt(value2));
+            }
+        });
+    </script>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ChromeDevTools: Console tab</title>
+    <meta name="description" content="dynamic tutorial on Chrome Developer Tools: console tab">
+    <meta name="author" content="msoWebDesign">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-md-3 sidebar">
+            <h3>Examples</h3>
+                <a href="ElementsTab.html" >Elements tab</a>
+                <a href="sourceTab.html" >Source tab</a>
+                <a href="http://facebook.com" >Network tab( It will link to facebook)</a>
+                <a href="ConsoleTab.html" >Console tab</a>
+                <a href="index.html" >Back</a>
+        </div>
+        <div class="col-md-8">
+            <h1>Console tab</h1>
+            Click me to stop the asser message<input type="checkbox" class="check">
+            <br />
+            <button class="clickMe" >Click Me!</button>
+            <br />
+            <br />
+            <br />
+            <p>This are the console log format specified</p>
+            <table>
+                <tr>
+                    <th>Format Specifier</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>%s</td>
+                    <td>Formats the value as a string.</td>
+                </tr>
+                <tr>
+                    <td>%d or %i</td>
+                    <td>Formats the value as an integer.</td>
+                </tr>
+                <tr>
+                    <td>%f</td>
+                    <td>Formats the value as a floating point value.</td>
+                </tr>
+                <tr>
+                    <td>%o</td>
+                    <td>Formats the value as an expandable DOM element (as in the Elements panel).</td>
+                </tr>
+                <tr>
+                    <td>%O</td>
+                    <td>Formats the value as an expandable JavaScript object.</td>
+                </tr>
+                <tr>
+                    <td>%c</td>
+                    <td>Formats the output string according to CSS styles you provide.</td>
+                </tr>
+            </table>
+            <br />
+            <br />
+        </div>
+    </div>
+</body>
+<script>
+    console.log("%cWELCOME TO THE CONSOLE TAB", "color:orange; background:blue; font-size: 16pt");
+    console.info('The page is loading');
+    console.info('The page is fully loaded');
+    console.log('something to log');
+    console.error('Usually attached to a try and catch');
+    
+    $('.clickMe').click( function(){
+        console.log('I got clicked');
+        
+        console.count('I got clicked');
+        
+        console.assert($('.check').prop('checked'), 'i got logged because the checkbox is not checked');
+    });
+    
+    var multiPizzaToppings = [
+                        [ 'cherry tomato', 'mozzarella' ,'ham'], 
+                        [ 'chicken', 'pineapple', 'chorizo'],
+                        [ 'rocket' , 'peppers', 'onions']
+                     ];
+</script>
+</html>

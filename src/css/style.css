@@ -1,0 +1,13 @@
+.hover:active{
+    list-style: none;
+    background-repeat: no-repeat
+}
+
+.sidebar a{ 
+    float:left;
+    width:250px;
+    padding: 10px;
+    margin-bottom:5px;
+    border:2px solid blue;
+    border-radius: 5px;
+}
