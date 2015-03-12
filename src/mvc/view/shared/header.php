@@ -14,6 +14,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="header">
-        <h1>Chrome Developer Tool</h1>
-    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="/index.php">
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/index.php">Home</a></li>
+                <li><a href="/index.php?content=overview">Overview</a></li>
+                <li><a href="/index.php?content=contactUs">Contact Us</a></li>
+                <li><a href="/index.php?content=contactUs">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
