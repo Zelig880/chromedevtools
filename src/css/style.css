@@ -1,7 +1,40 @@
+.red{
+    color:#F90101;
+}
+.green{
+    color: #00933B;
+}
+.yellow{
+    color:#F2B50F;
+}
 body{
     width:1200px;
     margin:auto;
-    background-color:ghostwhite;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+}
+h2{
+    font-size:19px !important;
+    font-weight: bold;
+}
+.navbar-brand{
+    height: 43px;
+}
+.navbar-nav>li>a{
+    font-size: 20px;
+    line-height: 40px;
+}
+.panel-heading{
+    background:url(../images/balls.png) no-repeat;
+    background-position:right;
+}
+.overviewIntro{
+    background: url(../images/overview1.png) no-repeat;
+    background-position: left bottom;
+    padding-left:200px;
+}
+#footer{
+    font-size: 13px;
 }
 .twitter, .facebook{
     height:35px;

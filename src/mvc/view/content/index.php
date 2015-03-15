@@ -1,5 +1,5 @@
-<div class="row">
-    <div class="col-md-12 panel panel-default">
+<div class="col-md-offset-1 col-md-10">
+    <div class="row panel panel-default">
         <div class="panel-heading">
             <h3 class="panel-title">Our Mission</h3>
         </div>

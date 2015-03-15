@@ -7,14 +7,15 @@
                 <li>Sitemap</li>
             </ul>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-8">
             <p class="text-center">
                 Designed and build by <a href="http://www.msoWebDesign.co.uk">MsoWebDesign</a><br/>
                 This is an open source project, please feel free to contact me for suggerstion or if you owuld like to get involved.
+                <br/>
                 The Code is shared on github <a href="https://github.com/Zelig880/chromedevtools">here</a> and is licensed under MIT license.
             </p>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="facebook">
                 <a href="https://www.facebook.com/zelig880">@msoWebDesign</a>
             </div>
